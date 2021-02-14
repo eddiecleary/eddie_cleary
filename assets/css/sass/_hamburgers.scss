@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+$hamburger-layer-color: v.$blue;
+$hamburger-types: (
+  emphatic,
+);
+
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+

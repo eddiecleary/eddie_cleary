@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-ec-black px-5 text-ec-grey font-body;
+}
+
+.menu-item {
+    @apply py-3 hover:text-ec-blue text-lg;
+}
+
+.abs-center {
+    @apply absolute left-1/2 transform -translate-x-1/2;
+}
+
+.btn {
+    @apply py-3 md:py-4 px-4 inline-block font-semibold;
+}
+
+.btn-primary {
+    @apply bg-ec-blue text-ec-black rounded-full;
+}
+
+.btn-link {
+    @apply flex content-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    @apply font-display;
+}
+
+.input-focus:focus {
+    @apply focus:outline-none focus:border-ec-blue caret-ec-blue;
+}
+
+/* Contact From Styles */
+.wpcf7 {
+    @apply text-left mt-6 md:w-7/12 mx-auto;
+}
+
+.wpcf7 label {
+    @apply w-full inline-block;
+}
+
+.wpcf7-form-control-wrap:not(.your-message) {
+    @apply mb-6 block;
+}
+
+.wpcf7-form-control {
+    @apply bg-ec-black p-2 mt-2 border-ec-grey border-2 input-focus w-full rounded;
+}
+
+.wpcf7-submit {
+    @apply p-3 bg-ec-blue rounded border-2 border-ec-blue text-ec-black;
+}
+
+
+.resume-heading {
+    @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest;
+}

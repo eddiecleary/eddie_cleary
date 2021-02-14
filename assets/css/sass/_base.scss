@@ -1,0 +1,13 @@
+@use 'variables' as v;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    max-width: 150px;
+
+    @media (min-width: 767px) {
+        max-width: 200px;
+    }
+}
