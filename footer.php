@@ -18,7 +18,7 @@
         ?>
     </div>
 
-    <div class="text-ec-grey w-full md:w-3/4 mx-auto">
+    <div class="text-ec-grey w-full md:w-3/4 max-w-lg mx-auto">
         <?php wp_nav_menu(array(
             'theme_location'    => 'header',
             'container'         => false,

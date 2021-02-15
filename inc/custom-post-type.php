@@ -49,9 +49,10 @@ function ec_project_post_type() {
         'has_archive'           => true,
         'hierarchical'          => false,
         'menu_position'         => 20,
-        'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt'   ),
+        'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
         'taxonomies'            => array( 'category', 'post_tag' ),
         'menu_icon'             => 'dashicons-images-alt',
+        'show_in_rest'          => true
     );
 
     register_post_type( 'Project', $args );

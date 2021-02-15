@@ -20,10 +20,9 @@
     </head>
 
     <header class="mt-7">
-        <div class="mx-auto lg:container w-full flex flex-wrap justify-between content-center relative">
+        <div class="mx-auto lg:container w-full flex flex-wrap lg:flex-no-wrap justify-between content-center relative">
             <div class="logo w-28 md:w-1/4">
                 <?php
-
                 $custom_logo_id = get_theme_mod( 'custom_logo' );
                 $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                 if ( has_custom_logo() ) {
@@ -38,11 +37,11 @@
                 </span>
             </button>
 
-            <nav id="nav" class="text-ec-grey top-full w-full hidden">
+            <nav id="nav" class="text-ec-grey top-full lg:flex lg:content-center w-full lg:max-w-md hidden">
                 <?php wp_nav_menu(array(
                     'theme_location'    => 'header',
                     'container'         => false,
-                    'menu_class'        => 'flex flex-col text-center justify-between',
+                    'menu_class'        => 'flex flex-col lg:flex-row lg:w-full lg:content-center text-center justify-between',
                 )); ?>
             </nav>
 

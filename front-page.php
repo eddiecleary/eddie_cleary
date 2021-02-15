@@ -4,22 +4,28 @@
     <section class="hero container mx-auto mt-8 sm:mt-16">
         <div class="hero text-center flex flex-col justify-center">
             <h1 class="text-2xl sm:text-3xl md:text-4xl">Eddie Cleary is a Freelance <br class="hidden md:block"> Web Developer</h1>
-            <h2 class="text-sm sm:text-base md:text-2xl mt-4 md:mt-6">— Looking for remote opportunities —</h2>
-            <div class="flex w-full sm:w-3/4 md:w-1/2 md:max-w-xs mx-auto justify-center mt-8">
-                <a href="#" class="btn btn-primary w-5/12 hover:bg-ec-grey">Hire me</a>
+            <h2 class="text-sm sm:text-base md:text-2xl mt-4 md:mt-6 lg:mt-10">— Looking for remote opportunities —</h2>
+            <div class="flex w-full max-w-md mx-auto justify-center mt-8 lg:mt-12">
+                <a href="#" class="btn btn-primary hover:bg-ec-grey">Hire me</a>
                 <a href="#" class="btn btn-link hover:text-ec-blue">View Resumé</a>
             </div>
         </div>
         <picture>
             <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-lg.svg">
             <img class="mt-16 block mx-auto w-full sm:w-11/12 md:w-3/4 max-w-2xl" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero.svg" />
+
         </picture>
     </section>
     <section id="about" class="about container mx-auto mt-16 md:mt-24 text-center">
         <h3 class="text-2xl sm:text-3xl md:text-4xl">About Me</h3>
-        <img class="w-full max-w-xs block mx-auto mt-8 border-solid border-2 border-ec-blue" src="<?php echo get_template_directory_uri(); ?>/assets/images/about.jpg" alt="Eddie Cleary Freelance Web Developer Portrait" >
-        <h4 class="mt-4 text-xl md:mt-8 md:text-2xl">Front End Web Developer</h4>
-        <p class="mt-4 text-sm sm:text-base mx-auto md:w-7/12 md:text-lg">With over 3 years of web development experience, making websites is my <em>passion</em>! I love making my designs as <strong>minimilastic</strong> and <strong>user-friendly</strong> as possible.</p>
+        <div class="lg:flex lg:items-center lg:mt-12">
+            <img class="w-full max-w-xs block mx-auto mt-8 border-solid border-2 border-ec-blue lg:mr-12 lg:w-1/2" src="<?php echo get_template_directory_uri(); ?>/assets/images/about.jpg" alt="Eddie Cleary Freelance Web Developer Portrait" >
+            <div class="lg:text-left lg:w-1/2">
+                <h4 class="mt-4 text-xl md:mt-8 md:text-2xl lg:text-3xl">Full-Stack CMS Web Developer</h4>
+                <p class="mt-4 text-sm sm:text-base mx-auto lg:mx-0 md:w-7/12 lg:w-10/12 md:text-lg lg:hidden">With over 3 years of web development experience, making websites is my <em>passion</em>! I love making my designs as <strong>minimilastic</strong> and <strong>user-friendly</strong> as possible.</p>
+                <p class="mt-4 text-sm sm:text-base mx-auto lg:mx-0 lg:w-10/12 md:text-lg hidden lg:block">With over 3 years of web development experience, making websites is my <em>passion</em>! I love making my designs as <strong>minimilastic</strong> and <strong>user-friendly</strong> as possible. I can build anything from simple static websites to complex content management systems and e-commerce online stores.</p>
+            </div>
+        </div>
     </section>
     <section class="experience container mx-auto mt-16 md:mt-24">
         <h3 class="text-2xl sm:text-3xl md:text-4xl text-center">Programming Languages</h3>
@@ -94,7 +100,7 @@
         <h4 class="text-xl md:text-4xl mb-4 md:mb-12">Eddie's Recent Projects</h4>
 
         <!-- Gallery Start -->
-        <ul class="gallery">
+        <ul class="gallery max-w-lg mx-auto lg:max-w-full">
         <?php
         $posts = get_posts([
             'post_type'         => 'project',
@@ -106,8 +112,8 @@
             <a href="<?php the_permalink(); ?>" class="gallery__link">
                 <li class="gallery__item">
                     <div class="gallery__overlay">
-                        <h5 class="gallery__title text-2xl"><?php the_title(); ?></h5>
-                        <div class="gallery__description w-3/4"><?php the_excerpt(); ?></div>
+                        <h5 class="gallery__title text-2xl md:mt-4 lg:mt-2 xl:text-3xl xl:mt-4"><?php the_title(); ?></h5>
+                        <div class="gallery__description md:w-3/4 lg:w-11/12 xl:w-9/12 mt-1 xl:mt-4"><?php the_excerpt(); ?></div>
                         <ul class="gallery__tag-list">
                         <?php foreach (get_the_tags() as $tag) : ?>
                             <li class="gallery__tag">

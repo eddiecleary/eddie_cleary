@@ -7,7 +7,17 @@ body {
 }
 
 .menu-item {
-    @apply py-3 hover:text-ec-blue text-lg;
+    @apply py-3 hover:text-ec-blue text-lg lg:flex lg:items-center lg:relative lg:top-2;
+}
+
+.menu-item::before {
+    content: '';
+    height: 5px;
+    @apply w-full absolute block left-0 transform translate-y-7 bg-ec-blue rounded-full transition duration-200 opacity-0;
+}
+
+#menu-header-menu .menu-item:hover.menu-item::before {
+    @apply translate-y-5 opacity-100;
 }
 
 .abs-center {
@@ -15,11 +25,11 @@ body {
 }
 
 .btn {
-    @apply py-3 md:py-4 px-4 inline-block font-semibold;
+    @apply py-3 md:py-4 md:px-12 px-4 inline-block;
 }
 
 .btn-primary {
-    @apply bg-ec-blue text-ec-black rounded-full;
+    @apply bg-ec-blue text-ec-black rounded-full hover:bg-ec-grey font-bold;
 }
 
 .btn-link {
@@ -76,5 +86,5 @@ h5 {
 }
 
 .resume-heading {
-    @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest;
+    @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest md:text-2xl;
 }

@@ -182,6 +182,11 @@ html {
   outline: none;
 }
 
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
 .theline {
   max-width: 280px;
 }
@@ -192,7 +197,7 @@ html {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -205,7 +210,7 @@ html {
 @media (min-width: 768px) {
   .gallery__item:hover .gallery__overlay {
     opacity: 1;
-    visibility: visible;
+    transition: opacity 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
 }
 .gallery__overlay {
@@ -218,16 +223,14 @@ html {
   background-color: rgba(46, 48, 51, 0.91);
   display: flex;
   opacity: 0;
-  visibility: hidden;
   flex-direction: column;
   align-items: center;
-  transition: opacity 0.23s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   padding: 0.75rem;
   box-shadow: 0 0 10px 5px rgba(75, 158, 244, 0.75);
 }
 .gallery__description {
   flex: 1 0 auto;
-  margin-top: 1rem;
 }
 .gallery__tag-list {
   display: flex;
@@ -235,9 +238,15 @@ html {
   width: 100%;
 }
 .gallery__tag {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   overflow: hidden;
+}
+@media (min-width: 1280px) {
+  .gallery__tag {
+    height: 40px;
+    width: 40px;
+  }
 }
 .gallery__tag img {
   width: 100%;
