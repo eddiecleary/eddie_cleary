@@ -7,7 +7,7 @@ html {
 .logo {
     max-width: 150px;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         max-width: 200px;
     }
 }

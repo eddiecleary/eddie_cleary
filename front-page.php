@@ -4,14 +4,14 @@
     <section class="hero container mx-auto mt-8 sm:mt-16">
         <div class="hero text-center flex flex-col justify-center">
             <h1 class="text-2xl sm:text-3xl md:text-4xl">Eddie Cleary is a Freelance <br class="hidden md:block"> Web Developer</h1>
-            <h2 class="text-sm sm:text-lg md:text-2xl mt-4 md:mt-6">— Looking for remote opportunities —</h2>
+            <h2 class="text-sm sm:text-base md:text-2xl mt-4 md:mt-6">— Looking for remote opportunities —</h2>
             <div class="flex w-full sm:w-3/4 md:w-1/2 md:max-w-xs mx-auto justify-center mt-8">
                 <a href="#" class="btn btn-primary w-5/12 hover:bg-ec-grey">Hire me</a>
                 <a href="#" class="btn btn-link hover:text-ec-blue">View Resumé</a>
             </div>
         </div>
         <picture>
-            <source media="(min-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-lg.svg">
+            <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-lg.svg">
             <img class="mt-16 block mx-auto w-full sm:w-11/12 md:w-3/4 max-w-2xl" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero.svg" />
         </picture>
     </section>
@@ -251,11 +251,11 @@
         <h5 class="text-2xl sm:text-3xl md:text-4xl">Let's Get in Touch!</h5>
         <p class="mt-8 mx-auto sm:w-11/12 md:w-1/2">For inquiries, feel free to send an email or write a short message below, and I will get back to you as soon as possible!</p>
         <div class="text-6xl flex justify-center my-10">
-            <a href="https://www.linkedin.com/in/eddie-cleary"><span class="ec ec-linkedin px-12 inline-block"></span></a>
-            <a href="https://github.com/eddiecleary"><span class="ec ec-Github"></span></a>
+            <a href="https://www.linkedin.com/in/eddie-cleary" target="_blank"><span class="ec ec-linkedin pr-8 inline-block"></span></a>
+            <a href="https://github.com/eddiecleary" target="_blank"><span class="ec ec-Github"></span></a>
         </div>
         <a class="text-ec-blue md:text-xl inline-block" href="mailto:eddie@eddiecleary.com">eddie@eddiecleary.com</a>
-        <?php echo do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="20" title="Contact form 1" html_class="flex flex-wrap justify-between"]'); ?>
     </section>
 
 </main>

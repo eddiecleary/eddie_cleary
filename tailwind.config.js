@@ -10,10 +10,10 @@ module.exports = {
         'body': ['Ubuntu', 'sans-serif'],
     },
     screens: {
-        'sm': '413px',
-        'md': '767px',
-        'lg': '1023px',
-        'xl': '1279px',
+        'sm': '414px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
     },
     container: {
         center: true,

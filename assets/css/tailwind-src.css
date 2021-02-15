@@ -43,8 +43,24 @@ h5 {
     @apply text-left mt-6 md:w-7/12 mx-auto;
 }
 
-.wpcf7 label {
-    @apply w-full inline-block;
+.wpcf7 p {
+    @apply inline-block w-full;
+}
+
+.wpcf7 p:nth-of-type(1),
+.wpcf7 p:nth-of-type(2) {
+    width: 100%;
+}
+
+@media (min-width: 414px) {
+    .wpcf7 p:nth-of-type(1),
+    .wpcf7 p:nth-of-type(2) {
+        width: 48%;
+    }
+}
+
+.wpcf7 p label:focus {
+    @apply text-ec-blue;
 }
 
 .wpcf7-form-control-wrap:not(.your-message) {
@@ -58,7 +74,6 @@ h5 {
 .wpcf7-submit {
     @apply p-3 bg-ec-blue rounded border-2 border-ec-blue text-ec-black;
 }
-
 
 .resume-heading {
     @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest;

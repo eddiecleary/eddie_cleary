@@ -557,31 +557,31 @@ video {
   margin-left: auto;
 }
 
-@media (min-width: 413px) {
+@media (min-width: 414px) {
   .container {
-    max-width: 413px;
+    max-width: 414px;
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1023px;
+    max-width: 1024px;
     padding-right: 4rem;
     padding-left: 4rem;
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1279px;
+    max-width: 1280px;
     padding-right: 5rem;
     padding-left: 5rem;
   }
@@ -14247,19 +14247,19 @@ video {
 }
 
 .max-w-screen-sm {
-  max-width: 413px;
+  max-width: 414px;
 }
 
 .max-w-screen-md {
-  max-width: 767px;
+  max-width: 768px;
 }
 
 .max-w-screen-lg {
-  max-width: 1023px;
+  max-width: 1024px;
 }
 
 .max-w-screen-xl {
-  max-width: 1279px;
+  max-width: 1280px;
 }
 
 .min-h-0 {
@@ -32439,7 +32439,7 @@ body {
   padding-right: 1rem;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .btn {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -32483,15 +32483,32 @@ h1, h2, h3, h4, h5 {
   text-align: left;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .wpcf7 {
     width: 58.333333%;
   }
 }
 
-.wpcf7 label {
+.wpcf7 p {
   display: inline-block;
   width: 100%;
+}
+
+.wpcf7 p:nth-of-type(1),
+.wpcf7 p:nth-of-type(2) {
+  width: 100%;
+}
+
+@media (min-width: 414px) {
+  .wpcf7 p:nth-of-type(1),
+    .wpcf7 p:nth-of-type(2) {
+    width: 48%;
+  }
+}
+
+.wpcf7 p label:focus {
+  --tw-text-opacity: 1;
+  color: rgba(75, 158, 244, var(--tw-text-opacity));
 }
 
 .wpcf7-form-control-wrap:not(.your-message) {
@@ -32545,38 +32562,38 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0.1em;
 }
 
-@media (min-width: 413px) {
+@media (min-width: 414px) {
   .sm\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media (min-width: 413px) {
+  @media (min-width: 414px) {
     .sm\:container {
-      max-width: 413px;
+      max-width: 414px;
       padding-right: 2rem;
       padding-left: 2rem;
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .sm\:container {
-      max-width: 767px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
     .sm\:container {
-      max-width: 1023px;
+      max-width: 1024px;
       padding-right: 4rem;
       padding-left: 4rem;
     }
   }
 
-  @media (min-width: 1279px) {
+  @media (min-width: 1280px) {
     .sm\:container {
-      max-width: 1279px;
+      max-width: 1280px;
       padding-right: 5rem;
       padding-left: 5rem;
     }
@@ -46242,19 +46259,19 @@ h1, h2, h3, h4, h5 {
   }
 
   .sm\:max-w-screen-sm {
-    max-width: 413px;
+    max-width: 414px;
   }
 
   .sm\:max-w-screen-md {
-    max-width: 767px;
+    max-width: 768px;
   }
 
   .sm\:max-w-screen-lg {
-    max-width: 1023px;
+    max-width: 1024px;
   }
 
   .sm\:max-w-screen-xl {
-    max-width: 1279px;
+    max-width: 1280px;
   }
 
   .sm\:min-h-0 {
@@ -63615,38 +63632,38 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .md\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media (min-width: 413px) {
+  @media (min-width: 414px) {
     .md\:container {
-      max-width: 413px;
+      max-width: 414px;
       padding-right: 2rem;
       padding-left: 2rem;
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .md\:container {
-      max-width: 767px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
     .md\:container {
-      max-width: 1023px;
+      max-width: 1024px;
       padding-right: 4rem;
       padding-left: 4rem;
     }
   }
 
-  @media (min-width: 1279px) {
+  @media (min-width: 1280px) {
     .md\:container {
-      max-width: 1279px;
+      max-width: 1280px;
       padding-right: 5rem;
       padding-left: 5rem;
     }
@@ -77312,19 +77329,19 @@ h1, h2, h3, h4, h5 {
   }
 
   .md\:max-w-screen-sm {
-    max-width: 413px;
+    max-width: 414px;
   }
 
   .md\:max-w-screen-md {
-    max-width: 767px;
+    max-width: 768px;
   }
 
   .md\:max-w-screen-lg {
-    max-width: 1023px;
+    max-width: 1024px;
   }
 
   .md\:max-w-screen-xl {
-    max-width: 1279px;
+    max-width: 1280px;
   }
 
   .md\:min-h-0 {
@@ -94685,38 +94702,38 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media (min-width: 413px) {
+  @media (min-width: 414px) {
     .lg\:container {
-      max-width: 413px;
+      max-width: 414px;
       padding-right: 2rem;
       padding-left: 2rem;
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .lg\:container {
-      max-width: 767px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
     .lg\:container {
-      max-width: 1023px;
+      max-width: 1024px;
       padding-right: 4rem;
       padding-left: 4rem;
     }
   }
 
-  @media (min-width: 1279px) {
+  @media (min-width: 1280px) {
     .lg\:container {
-      max-width: 1279px;
+      max-width: 1280px;
       padding-right: 5rem;
       padding-left: 5rem;
     }
@@ -108382,19 +108399,19 @@ h1, h2, h3, h4, h5 {
   }
 
   .lg\:max-w-screen-sm {
-    max-width: 413px;
+    max-width: 414px;
   }
 
   .lg\:max-w-screen-md {
-    max-width: 767px;
+    max-width: 768px;
   }
 
   .lg\:max-w-screen-lg {
-    max-width: 1023px;
+    max-width: 1024px;
   }
 
   .lg\:max-w-screen-xl {
-    max-width: 1279px;
+    max-width: 1280px;
   }
 
   .lg\:min-h-0 {
@@ -125755,38 +125772,38 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media (min-width: 413px) {
+  @media (min-width: 414px) {
     .xl\:container {
-      max-width: 413px;
+      max-width: 414px;
       padding-right: 2rem;
       padding-left: 2rem;
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .xl\:container {
-      max-width: 767px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 1024px) {
     .xl\:container {
-      max-width: 1023px;
+      max-width: 1024px;
       padding-right: 4rem;
       padding-left: 4rem;
     }
   }
 
-  @media (min-width: 1279px) {
+  @media (min-width: 1280px) {
     .xl\:container {
-      max-width: 1279px;
+      max-width: 1280px;
       padding-right: 5rem;
       padding-left: 5rem;
     }
@@ -139452,19 +139469,19 @@ h1, h2, h3, h4, h5 {
   }
 
   .xl\:max-w-screen-sm {
-    max-width: 413px;
+    max-width: 414px;
   }
 
   .xl\:max-w-screen-md {
-    max-width: 767px;
+    max-width: 768px;
   }
 
   .xl\:max-w-screen-lg {
-    max-width: 1023px;
+    max-width: 1024px;
   }
 
   .xl\:max-w-screen-xl {
-    max-width: 1279px;
+    max-width: 1280px;
   }
 
   .xl\:min-h-0 {
@@ -156895,7 +156912,7 @@ html {
 .logo {
   max-width: 150px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .logo {
     max-width: 200px;
   }
@@ -157018,7 +157035,7 @@ html {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -157028,7 +157045,7 @@ html {
   width: 100;
   padding-top: 56.25%;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__item:hover .gallery__overlay {
     opacity: 1;
     visibility: visible;
