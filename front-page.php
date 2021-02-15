@@ -106,8 +106,8 @@
             <a href="<?php the_permalink(); ?>" class="gallery__link">
                 <li class="gallery__item">
                     <div class="gallery__overlay">
-                        <h5 class="gallery__title"><?php the_title(); ?></h5>
-                        <div class="gallery__description"><?php the_excerpt(); ?></div>
+                        <h5 class="gallery__title text-2xl"><?php the_title(); ?></h5>
+                        <div class="gallery__description w-3/4"><?php the_excerpt(); ?></div>
                         <ul class="gallery__tag-list">
                         <?php foreach (get_the_tags() as $tag) : ?>
                             <li class="gallery__tag">
@@ -250,10 +250,11 @@
     <section id="contact" class="contact container mx-auto mt-16 md:mt-24 text-center">
         <h5 class="text-2xl sm:text-3xl md:text-4xl">Let's Get in Touch!</h5>
         <p class="mt-8 mx-auto sm:w-11/12 md:w-1/2">For inquiries, feel free to send an email or write a short message below, and I will get back to you as soon as possible!</p>
-        <div>
-
+        <div class="text-6xl flex justify-center my-10">
+            <a href="https://www.linkedin.com/in/eddie-cleary"><span class="ec ec-linkedin px-12 inline-block"></span></a>
+            <a href="https://github.com/eddiecleary"><span class="ec ec-Github"></span></a>
         </div>
-        <a class="text-ec-blue mt-8 md:text-xl inline-block" href="mailto:eddie@eddiecleary.com">eddie@eddiecleary.com</a>
+        <a class="text-ec-blue md:text-xl inline-block" href="mailto:eddie@eddiecleary.com">eddie@eddiecleary.com</a>
         <?php echo do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
     </section>
 

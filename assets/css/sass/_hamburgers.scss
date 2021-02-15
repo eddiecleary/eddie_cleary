@@ -7,3 +7,7 @@ $hamburger-types: (
 
 @import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
+.hamburger:focus {
+    outline: none;
+}
+

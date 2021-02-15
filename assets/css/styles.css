@@ -156827,8 +156827,8 @@ h1, h2, h3, h4, h5 {
 @charset "UTF-8";
 @font-face {
   font-family: "ec-theme";
-  src: url("../../fonts/ec-theme.eot?l7hx07");
-  src: url("../../fonts/ec-theme.eot?l7hx07#iefix") format("embedded-opentype"), url("../../fonts/ec-theme.ttf?l7hx07") format("truetype"), url("../../fonts/ec-theme.woff?l7hx07") format("woff"), url("../../fonts/ec-theme.svg?l7hx07#ec-theme") format("svg");
+  src: url("../fonts/ec-theme.eot?9yjgk");
+  src: url("../fonts/ec-theme.eot?9yjgk#iefix") format("embedded-opentype"), url("../fonts/ec-theme.ttf?9yjgk") format("truetype"), url("../fonts/ec-theme.woff?9yjgk") format("woff"), url("../fonts/ec-theme.svg?9yjgk#ec-theme") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -156846,374 +156846,8 @@ h1, h2, h3, h4, h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.ec-GSAP .path1:before {
-  content: "";
-  color: #010101;
-}
-
-.ec-GSAP .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path3:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path4:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path5:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path6:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path7:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path8:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path9:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path10:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path11:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path12:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path13:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path14:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path15:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path16:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path17:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path18:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path19:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path20:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path21:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path22:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path23:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path24:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path25:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path26:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path27:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path28:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path29:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path30:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path31:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path32:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path33:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path34:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path35:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path36:before {
-  content: "";
-  margin-left: -1em;
-  color: #0a1825;
-}
-
-.ec-GSAP .path37:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path38:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path39:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path40:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.3;
-}
-
-.ec-GSAP .path41:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.3;
-}
-
-.ec-GSAP .path42:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.3;
-}
-
-.ec-GSAP .path43:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.3;
-}
-
-.ec-GSAP .path44:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path45:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path46:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path47:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path48:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path49:before {
-  content: "";
-  margin-left: -1em;
-  color: #f0efef;
-}
-
-.ec-GSAP .path50:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
-}
-
-.ec-GSAP .path51:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
-}
-
-.ec-GSAP .path52:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path53:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
-}
-
-.ec-GSAP .path54:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
-}
-
-.ec-GSAP .path55:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
-}
-
-.ec-GSAP .path56:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path57:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path58:before {
-  content: "";
-  margin-left: -1em;
-  color: #8ac640;
-}
-
-.ec-GSAP .path59:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-}
-
-.ec-GSAP .path60:before {
-  content: "";
-  margin-left: -1em;
-  color: #010101;
-  opacity: 0.4;
+.ec:hover {
+  filter: grayscale(70%);
 }
 
 .ec-Facebook:before {
@@ -157230,60 +156864,8 @@ h1, h2, h3, h4, h5 {
   content: "";
 }
 
-.ec-CSS3 .path1:before {
-  content: "";
-  color: white;
-}
-
-.ec-CSS3 .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: #1572b6;
-}
-
-.ec-CSS3 .path3:before {
-  content: "";
-  margin-left: -1em;
-  color: #33a9dc;
-}
-
-.ec-CSS3 .path4:before {
-  content: "";
-  margin-left: -1em;
-  color: white;
-}
-
-.ec-CSS3 .path5:before {
-  content: "";
-  margin-left: -1em;
-  color: #ebebeb;
-}
-
-.ec-CSS3 .path6:before {
-  content: "";
-  margin-left: -1em;
-  color: white;
-}
-
-.ec-CSS3 .path7:before {
-  content: "";
-  margin-left: -1em;
-  color: #ebebeb;
-}
-
 .ec-Download:before {
   content: "";
-}
-
-.ec-ES6 .path1:before {
-  content: "";
-  color: #f7df1e;
-}
-
-.ec-ES6 .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: black;
 }
 
 .ec-Facebook1:before {
@@ -157291,70 +156873,14 @@ h1, h2, h3, h4, h5 {
   color: #18a0fb;
 }
 
-.ec-Gatsby .path1:before {
-  content: "";
-  color: white;
-}
-
-.ec-Gatsby .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: #744c9e;
-}
-
 .ec-Github1:before {
   content: "";
   color: #18a0fb;
 }
 
-.ec-HTML5 .path1:before {
-  content: "";
-  color: #e44d26;
-}
-
-.ec-HTML5 .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: #f16529;
-}
-
-.ec-HTML5 .path3:before {
-  content: "";
-  margin-left: -1em;
-  color: #ebebeb;
-}
-
-.ec-HTML5 .path4:before {
-  content: "";
-  margin-left: -1em;
-  color: #ebebeb;
-}
-
-.ec-HTML5 .path5:before {
-  content: "";
-  margin-left: -1em;
-  color: white;
-}
-
 .ec-linkedin:before {
   content: "";
   color: #18a0fb;
-}
-
-.ec-React:before {
-  content: "";
-  color: #61dafb;
-}
-
-.ec-Sass .path1:before {
-  content: "";
-  color: #cc6699;
-}
-
-.ec-Sass .path2:before {
-  content: "";
-  margin-left: -1em;
-  color: white;
 }
 
 .ec-Scroll:before {
@@ -157478,6 +157004,10 @@ html {
   transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.hamburger:focus {
+  outline: none;
+}
+
 .theline {
   max-width: 280px;
 }
@@ -157531,9 +157061,8 @@ html {
   width: 100%;
 }
 .gallery__tag {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   overflow: hidden;
 }
 .gallery__tag img {
