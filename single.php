@@ -6,13 +6,14 @@
 
 get_header(); ?>
 
-<?php the_title(); ?>
 
 <main id="single">
 
+    <div class="container">
+        <h1 class="text-4xl"><?php the_title(); ?></h1>
+
+    </div>
 
 </main>
-
-<?php the_content(); ?>
 
 <?php get_footer(); ?>

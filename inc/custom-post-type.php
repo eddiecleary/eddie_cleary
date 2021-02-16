@@ -52,7 +52,7 @@ function ec_project_post_type() {
         'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
         'taxonomies'            => array( 'category', 'post_tag' ),
         'menu_icon'             => 'dashicons-images-alt',
-        'show_in_rest'          => true
+        'show_in_rest'          => false
     );
 
     register_post_type( 'Project', $args );

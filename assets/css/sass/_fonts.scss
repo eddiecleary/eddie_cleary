@@ -10,6 +10,7 @@
   font-display: block;
 }
 
+
 .ec {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'ec-theme' !important;
@@ -23,12 +24,11 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  &:hover {
-      filter: grayscale(70%);
-  }
 }
 
+.ec-new-tab:before {
+  content: "\e903";
+}
 .ec-Facebook:before {
   content: "\e900";
   color: #18a0fb;

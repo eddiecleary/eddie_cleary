@@ -20,8 +20,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.ec:hover {
-  filter: grayscale(70%);
+
+.ec-new-tab:before {
+  content: "";
 }
 
 .ec-Facebook:before {
@@ -64,6 +65,20 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.site-outer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .logo {

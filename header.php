@@ -19,6 +19,7 @@
         <?php wp_head(); ?>
     </head>
 
+    <div class="site-outer">
     <header class="mt-7">
         <div class="mx-auto lg:container w-full flex flex-wrap lg:flex-no-wrap justify-between content-center relative">
             <div class="logo w-28 md:w-1/4">

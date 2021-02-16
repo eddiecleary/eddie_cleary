@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-ec-black px-5 text-ec-grey font-body;
+}
+
+.menu-item {
+    @apply py-3 hover:text-ec-blue text-lg lg:flex lg:items-center lg:relative lg:top-2;
+
+    &::before {
+        content: '';
+        height: 5px;
+        @apply w-full absolute block left-0 transform translate-y-7 bg-ec-blue rounded-full transition duration-200 opacity-0;
+    }
+}
+
+#menu-header-menu .menu-item:hover.menu-item::before {
+    @apply translate-y-5 opacity-100;
+}
+
+.abs-center {
+    @apply absolute left-1/2 transform -translate-x-1/2;
+}
+
+.btn {
+    @apply py-3 md:py-4 md:px-12 px-4 inline-block;
+
+    &-primary {
+        @apply bg-ec-blue text-ec-black rounded-full hover:bg-ec-grey font-bold;
+    }
+
+    &-icon {
+        @apply pr-16;
+    }
+
+    &-link {
+        @apply flex content-center;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    @apply font-display;
+}
+
+.input-focus:focus {
+    @apply focus:outline-none focus:border-ec-blue caret-ec-blue;
+}
+
+/* Contact From Styles */
+.wpcf7 {
+    @apply text-left mt-6 md:w-7/12 mx-auto;
+
+    p {
+        @apply inline-block w-full;
+    }
+
+    p:nth-of-type(1),
+    p:nth-of-type(2) {
+        width: 100%;
+    }
+
+    @media (min-width: 414px) {
+        p:nth-of-type(1),
+        p:nth-of-type(2) {
+            width: 48%;
+        }
+    }
+
+    p label:focus {
+        @apply text-ec-blue;
+    }
+
+    .wpcf7-form-control {
+        @apply bg-ec-black p-2 mt-2 border-ec-grey border-2 input-focus w-full rounded;
+    }
+
+    .wpcf7-form-control-wrap:not(.your-message) {
+        @apply mb-6 block;
+    }
+
+    .wpcf7-submit {
+        @apply p-3 bg-ec-blue rounded border-2 border-ec-blue text-ec-black;
+    }
+}
+
+.resume-heading {
+    @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest md:text-2xl;
+}
+
+.project-post-content {
+
+    .project-wrapper:nth-child(odd) {
+
+    }
+
+    .project-wrapper:nth-child(even) {
+        @apply flex-row-reverse;
+
+        .project-text {
+            @apply text-right;
+        }
+
+        .project-image {
+            @apply md:ml-0 md:mr-10;
+        }
+    }
+}
+

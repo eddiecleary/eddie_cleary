@@ -7,7 +7,7 @@
 ?>
 
 <footer class="footer container mx-auto flex flex-col text-center content-center mt-16 md:mt-20 pb-8">
-    <div class="w-1/2 md:w-1/4 mx-auto">
+    <div class="w-1/2 md:w-1/4 logo mx-auto">
         <?php
 
             $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -28,6 +28,7 @@
 
     <p>Copyright &copy; Eddie Cleary</p>
 </footer>
+</div> <!-- Site Outer -->
 
 <?php wp_footer(); ?>
 </body>

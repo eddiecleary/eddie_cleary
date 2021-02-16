@@ -4,13 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "tw:watch": "onchange 'tailwind.config.js' './assets/css/tailwind-src.css' -- npm run tw:build",
-        "tw:build": "tailwindcss build ./assets/css/tailwind-src.css -o ./assets/css/tailwind.css && npm run css:concat",
-        "tw:prod": "NODE_ENV=production postcss build ./assets/css/tailwind-src.css -o ./assets/css/tailwind.css",
+        "tw:watch": "onchange 'tailwind.config.js' './assets/css/tailwind-src.scss' -- npm run tw:build",
+        "tw:build": "npm run tw:sass && tailwindcss build ./assets/css/tailwind-src.css -o ./assets/css/tailwind.css && npm run css:concat",
+        "tw:sass": "sass ./assets/css/tailwind-src.scss ./assets/css/tailwind-src.css",
+        "tw:prod": "npm run tw:sass && NODE_ENV=production postcss build ./assets/css/tailwind-src.css -o ./assets/css/tailwind.css",
         "sass:watch": "onchange './assets/css/styles.scss' './assets/css/sass/**.scss' -- npm run sass:build",
         "sass:build": "sass ./assets/css/styles.scss ./assets/css/sass.css && npm run css:concat",
         "css:concat": "concat -o ./assets/css/styles.css ./assets/css/tailwind.css ./assets/css/sass.css",
-        "dev": "npm run tw:build & npm run sass:watch & npm run tw:watch",
+        "dev": "npm run tw:build && npm run sass:watch & npm run tw:watch",
         "build": "npm run tw:prod && npm run sass:build && npm run css:concat"
     },
     "repository": {
