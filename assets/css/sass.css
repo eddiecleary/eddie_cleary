@@ -225,7 +225,7 @@ img {
 @media (min-width: 768px) {
   .gallery__item:hover .gallery__overlay {
     opacity: 1;
-    transition: opacity 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: opacity 0.43s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
 }
 .gallery__overlay {

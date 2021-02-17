@@ -7,38 +7,30 @@
 get_header(); ?>
 
 
-<main id="single-project">
+<main id="single-project" class="w-10/12 mx-auto">
 
-    <section class="hero container flex items-center justify-between mt-16">
-        <div class="flex-grow">
-            <h1 class="text-4xl"><?php the_title(); ?></h1>
+    <section class="hero container flex justify-center mt-20">
+        <div class="text-center">
+            <h1 class="text-5xl"><?php the_title(); ?></h1>
             <h5 class="mt-2">Launched on: <?php echo get_the_date(); ?></h5>
         </div>
-        <div class="text-center">
-            <a  href="<?php echo esc_url(get_field('site_url')) ?>" class="btn btn-primary btn-icon relative" target="_blank">Visit Live Site <span class="ec ec-new-tab text-4xl right-6 absolute top-1/2 transform -translate-y-1/2"></span></a>
-        </div>
-    </section>
-    <section class="container">
-        <div class="mt-12">
-            <?php the_post_thumbnail(); ?>
-        </div>
-    </section>
-    <section class="container">
 
     </section>
-    <section class="container">
-        <div class="mt-6">
-            <h3 class="text-center mt-12 text-3xl">Technologies Used:</h3>
-            <ul class="flex w-full justify-center mt-6">
-                <?php foreach (get_the_tags() as $tag) : ?>
-                    <li class="w-12 mx-9">
-                        <div class="flex flex-col items-center">
-                            <?php z_taxonomy_image($tag->term_id); ?>
-                            <h5 class="mt-2"><?php echo $tag->name ?></h5>
-                        </div>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+    <section class="container mt-16">
+        <a href="<?php echo esc_url(get_field('site_url')) ?>" target="_blank">
+            <div class="">
+                <?php the_post_thumbnail(); ?>
+            </div>
+        </a>
+    </section>
+    <section class="container mt-12 flex items-center justify-between">
+        <div class="text-left w-7/12 relative left-6">
+            <div class="project-highlight-bar">
+                <?php echo get_field('excerpt'); ?>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="<?php echo esc_url(get_field('site_url')) ?>" class="btn btn-primary btn-icon relative" target="_blank">Visit Live Site <span class="ec ec-new-tab text-4xl right-6 absolute top-1/2 transform -translate-y-1/2"></span></a>
         </div>
     </section>
     <?php if(have_rows('main_content')): ?>
@@ -50,10 +42,12 @@ get_header(); ?>
                 $image = get_sub_field('image');
                 $size = 'full';
             ?>
-            <article class="flex mt-24 project-wrapper">
-                <div class="project-text max-w-2xl flex flex-col justify-center">
+            <article class="flex mt-24 project-wrapper justify-between">
+                <div class="project-text w-full max-w-2xl flex flex-col justify-center">
                     <?php if( !empty($heading)): ?>
-                        <h3 class="text-3xl"><?php echo $heading ?></h3>
+                        <div class="relative project-heading">
+                            <h3 class="text-3xl project-heading-dot"><?php echo $heading ?></h3>
+                        </div>
                     <?php endif; ?>
                     <?php if( !empty($description)): ?>
                         <div class="mt-6"><?php echo $description ?></div>
@@ -73,6 +67,21 @@ get_header(); ?>
             <?php endwhile; ?>
         </section>
     <?php endif; ?>
+    <section class="container mt-24">
+        <div class="mt-6">
+            <h3 class="text-center mt-12 text-3xl">Technologies Used:</h3>
+            <ul class="flex w-full justify-center mt-6">
+                <?php foreach (get_the_tags() as $tag) : ?>
+                    <li class="w-12 mx-9">
+                        <div class="flex flex-col items-center">
+                            <?php z_taxonomy_image($tag->term_id); ?>
+                            <h5 class="mt-2"><?php echo $tag->name ?></h5>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

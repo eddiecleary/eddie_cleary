@@ -81,14 +81,27 @@ h5 {
   @apply font-body text-lg font-bold text-ec-blue uppercase tracking-widest md:text-2xl;
 }
 
-.project-post-content .project-wrapper:nth-child(even) {
-  @apply flex-row-reverse;
+.project-post-content .project-image img {
+  max-width: 350px;
 }
-.project-post-content .project-wrapper:nth-child(even) .project-text {
-  @apply text-right;
+.project-highlight-bar::before {
+  @apply block bg-ec-blue absolute -left-6 top-0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 5px;
 }
-.project-post-content .project-wrapper:nth-child(even) .project-image {
-  @apply md:ml-0 md:mr-10;
+
+.project-heading {
+  @apply left-4;
+}
+.project-heading-dot::before {
+  @apply block bg-ec-blue absolute -left-4 top-1/2 transform -translate-y-1/2;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=tailwind-src.css.map */

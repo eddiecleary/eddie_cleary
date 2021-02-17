@@ -113,7 +113,9 @@
                 <li class="gallery__item">
                     <div class="gallery__overlay">
                         <h5 class="gallery__title text-2xl md:mt-4 lg:mt-2 xl:text-3xl xl:mt-4"><?php the_title(); ?></h5>
-                        <div class="gallery__description md:w-3/4 lg:w-11/12 xl:w-9/12 mt-1 xl:mt-4"><?php the_excerpt(); ?></div>
+                        <div class="flex-grow flex items-center">
+                            <div class="btn btn-primary">Read More</div>
+                        </div>
                         <ul class="gallery__tag-list">
                         <?php foreach (get_the_tags() as $tag) : ?>
                             <li class="gallery__tag">
